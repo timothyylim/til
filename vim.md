@@ -1,9 +1,3 @@
-
-
-``` 
-d
-```
-
-create a directory 
+```d``` create a directory 
 
 ```%``` create a new file 
