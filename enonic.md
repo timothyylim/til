@@ -1,4 +1,4 @@
-# Enonic Cheatsheet
+# Enonic XP
 
 Set your XP_HOME directory
 

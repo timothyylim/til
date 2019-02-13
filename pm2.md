@@ -1,4 +1,4 @@
-# pm2 Cheat Sheet
+# pm2 
 
 Generate a config
 

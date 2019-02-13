@@ -1,4 +1,4 @@
-# Vim Cheatsheet 
+# vim 
 
 In explore mode: 
 
