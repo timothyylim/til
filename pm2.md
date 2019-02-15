@@ -15,7 +15,8 @@ Use the --cron option:
 For example:
 
 ```
-pm2 start sendMail.js --cron "*/15 * * * *"
+pm2 start sendMail.js --cron "0 */1 * * *"
+// every hour
 ```
 
 [Cron in English](https://crontab.guru)
