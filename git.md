@@ -1,5 +1,8 @@
 # git 
 
+#### Delete all local branches except master
+```git branch | grep -v "master" | xargs git branch -D ```
+
 #### Delete a branch 
 
 ```git branch -d the_local_branch```
