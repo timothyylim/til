@@ -17,6 +17,10 @@ git add .
 
 #### Make an additional commit on the most recent one, without making a new commit
 ```
+Make changes you want locally
+git add -u
+git commit --amend --no-edit
+git push origin -f 4704-feature
 ```
 
 
