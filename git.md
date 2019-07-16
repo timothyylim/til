@@ -1,5 +1,25 @@
 # git 
 
+#### Add all modified files
+```
+git add -u
+```
+
+#### Add new files
+```
+git add .
+```
+
+#### Add deleted files
+```
+git add .
+```
+
+#### Make an additional commit on the most recent one, without making a new commit
+```
+```
+
+
 #### Delete all local branches except master
 ```git branch | grep -v "master" | xargs git branch -D ```
 
