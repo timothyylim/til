@@ -23,6 +23,13 @@ git commit --amend --no-edit
 git push origin -f 4704-feature
 ```
 
+#### Squash all commits into one commit
+```
+git checkout my_branch
+git reset --soft HEAD~4
+git commit
+git push --force origin my_branch
+```
 
 #### Delete all local branches except master
 ```git branch | grep -v "master" | xargs git branch -D ```
