@@ -38,6 +38,14 @@ git push --force origin my_branch
 
 ```git branch -d the_local_branch```
 
+### Rename a branch
+```
+git checkout <old_name>
+git branch -m <new_name> // Modifies local branch
+git push origin --delete <old_name> // Delete remote
+git push origin -u <new_name> // Push new branch to remote
+```
+
 #### Uncommit last commit 
 
 ```git reset --soft HEAD^```
