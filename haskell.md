@@ -2,9 +2,7 @@
 
 ## Data Types 
 
-- ```
-  data Bool = False | True
-  ```
+- ```data Bool = False | True```
   - ```Bool``` is the type constructor of datatype Bool and also the name of the
     type 
   - ```False``` and ```True``` are data constructors 
@@ -31,8 +29,67 @@
       3
       ``` 
 
-- Lists 
-  - Need to be of the same type
+- The compiler gives type class information instead of a concrete type if it is
+  not declared yet
+  - ```Prelude> :t 13
+    13 :: Num a => a
+    ```
+
+- You can assign a type to a value
+  - ```Prelude> fifteen = 15
+    fifteenInt = fifteen :: Int
+    ```
+
+- Currying 
+  - Nesting multiple functions 
+  - ```(->)``` is an infix operator and is right associative:
+    - ```
+      f :: a -> a -> 
+
+      -- associates to 
+
+      f :: a -> (a -> a)
+    ```
+  - Partial Application 
+    - A strategy to use currying to apply only part of a function:
+      - ```
+        addStuff :: Integer -> Integer -> Integer
+        addStuff :: a b = a + b + 5
+
+        addTen :: Integer -> Integer 
+        addTen = addStuff + 5 
+
+        -- Note:
+
+        addStuff :: Integer -> Integer -> Integer
+
+  
+       -- is equal to 
+
+        addStuff :: Integer -> (Integer -> Integer)
+      ```
+     - Sectioning - partial application of infix operators
+      - ```
+        > X = 5
+        > y = (2^)
+        > z = (^2)
+        > y x
+        > 32
+        > z x
+        > 25
+      ```
+    - Checking types of patial applications
+      - ```
+      > f :: a -> a -> a -> a; f = undefined
+      > x :: Char; x = undefined
+      > :t f x
+      ```
+  - Polymorphism
+    
+
+
+
+
 
 
 
