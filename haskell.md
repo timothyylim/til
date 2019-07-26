@@ -49,7 +49,7 @@
       -- associates to 
 
       f :: a -> (a -> a)
-    ```
+      ```
   - Partial Application 
     - A strategy to use currying to apply only part of a function:
       - ```
@@ -77,21 +77,32 @@
         > 32
         > z x
         > 25
-      ```
+        ```
     - Checking types of patial applications
       - ```
       > f :: a -> a -> a -> a; f = undefined
       > x :: Char; x = undefined
       > :t f x
       ```
-  - Polymorphism
-    
+- Polymorphism
+  - Accept arguments of one type and return values of another 
+  - Parametric polymorphism
+    - Parameters are fully polymorhphic
+  - Constrained polymorphism
+    - Type class constraints on parameters
+      - Decreasing flexibility but increases functionality
+  - Removing constraints (making things more polymorphic)
+    -``` 
+      > 6 / length [1, 2, 3]
+      > No instance for (Fractional Int) arising
+          from a use of ‘/’
+        In the expression: 6 / length [1, 2, 3]
+        In an equation for ‘it’: it = 6 / length [1, 2, 3]
 
+      > :type fromIntegral
+      fromIntegral :: (Num b, Integral a) => a -> b
 
-
-
-
-
-
-
+      > Prelude> 6 / fromIntegral (length [1, 2, 3])
+      2.0
+     ```
 
