@@ -64,10 +64,10 @@
         addStuff :: Integer -> Integer -> Integer
 
   
-       -- is equal to 
+        -- is equal to 
 
         addStuff :: Integer -> (Integer -> Integer)
-      ```
+        ```
      - Sectioning - partial application of infix operators
       - ```
         > X = 5
@@ -80,10 +80,10 @@
         ```
     - Checking types of patial applications
       - ```
-      > f :: a -> a -> a -> a; f = undefined
-      > x :: Char; x = undefined
-      > :t f x
-      ```
+        > f :: a -> a -> a -> a; f = undefined
+        > x :: Char; x = undefined
+        > :t f x
+        ```
 - Polymorphism
   - Accept arguments of one type and return values of another 
   - Parametric polymorphism
@@ -92,7 +92,7 @@
     - Type class constraints on parameters
       - Decreasing flexibility but increases functionality
   - Removing constraints (making things more polymorphic)
-    -``` 
+    - ``` 
       > 6 / length [1, 2, 3]
       > No instance for (Fractional Int) arising
           from a use of ‘/’
@@ -104,7 +104,7 @@
 
       > Prelude> 6 / fromIntegral (length [1, 2, 3])
       2.0
-     ```
+      ```
 
 - Type Classes 
   - Main points:
