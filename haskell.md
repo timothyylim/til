@@ -106,3 +106,17 @@
       2.0
      ```
 
+- Type Classes 
+  - Main points:
+    - type class defines set of functions and/or values
+    - types have instances of that type class
+    - instances specify ways that type uses the functions of the type class
+  - kind of like 'interfaces' in other languages  
+  - Partial functions - the dangers of 
+    - ```
+      f:: Int -> Bool
+      f 2 = True
+    ```
+      - This will blow up since it can only handle a single input: 2
+    - Turn all warnings in ghci to prevent partial functions:
+      - ```> :set -Wall```
