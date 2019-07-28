@@ -83,7 +83,9 @@
         > f :: a -> a -> a -> a; f = undefined
         > x :: Char; x = undefined
         > :t f x
-        ```
+ 
+       ```
+
 - Polymorphism
   - Accept arguments of one type and return values of another 
   - Parametric polymorphism
@@ -120,3 +122,11 @@
       - This will blow up since it can only handle a single input: 2
     - Turn all warnings in ghci to prevent partial functions:
       - ```> :set -Wall```
+
+- Functions 
+  - Are first class entities 
+    - 
+  - Can be values in expressios, lists, or tuples 
+  - Can be passed as arguments to a function
+  - Can be returned from a function as a result 
+  - Make use of syntatic patterns 
