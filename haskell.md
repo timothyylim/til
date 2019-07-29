@@ -130,3 +130,36 @@
   - Can be passed as arguments to a function
   - Can be returned from a function as a result 
   - Make use of syntatic patterns 
+
+- Lists 
+  - Ex. of pattern matching, return a tail of a list
+    - ```
+      myTail :: [a] -> [a]
+      myTail (_ : xs) = xs
+
+      safeTail :: [a] -> Maybe [a]
+      safeTail [] = Nothing 
+      safeTail (_:[]) = Nothing 
+      safeTail (_:xs) = Just xs
+    ```
+  - Constructing lists 
+    - Ranges
+      - ```> [1..10]```
+  - Extracting portions of lists
+    - ```take```
+    - ```drop```
+    - ```splitAt```
+    - ```takeWhile```
+    - ```dropWhile```
+  - List comprehensions 
+    - ```[x^2 | x <- [1..10]```
+  - Check whether an element is in a list
+    - ```elem 'a' "abracadabra"```
+    - ```
+    [x | x <- "This Is Africa", elem x ['A'..'Z']]
+
+    -- Can be rewritten as 
+
+    acro xs = [x | x <- xs, elem x ['A'..'Z']]
+    ```
+  - Spines and non-strict evaluation
