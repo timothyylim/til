@@ -9,7 +9,7 @@
 * docker ps -a //show all containers
 * #### -it flag:
   It means you can log in to your container using TTY, ie terminal. It's as if you've got a Linux machine in front of you and you're logging into it. If you have a container that's not running SSH server or telnet, this is your only mode of getting into the command line prompt.
-* ### --rm flag:
+* #### --rm flag:
   Docker also removes the anonymous volumes associated with the container when the container is removed. 
 
 ### Links
