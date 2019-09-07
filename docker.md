@@ -1,7 +1,19 @@
-Daniel says we need to mix these two tutorials:
+# Docker
 
-- https://www.fpcomplete.com/blog/2017/12/building-haskell-apps-with-docker
+### Info
+* An instance of an image is called a container
 
-- https://docs.haskellstack.org/en/stable/docker_integration/
+
+### Commands
+* docker ps //show only running containers
+* docker ps -a //show all containers
+* #### -it flag:
+  It means you can log in to your container using TTY, ie terminal. It's as if you've got a Linux machine in front of you and you're logging into it. If you have a container that's not running SSH server or telnet, this is your only mode of getting into the command line prompt.
+* #### --rm flag:
+  Docker also removes the anonymous volumes associated with the container when the container is removed. 
+
+### Links
+* https://www.fpcomplete.com/blog/2017/12/building-haskell-apps-with-docker
+* https://docs.haskellstack.org/en/stable/docker_integration/
 
   
