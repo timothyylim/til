@@ -30,6 +30,7 @@ c <- liftIO $ config <$> (readTVarIO s)
 ### Resources
 
 - [Cheatsheet](http://cheatsheet.codeslower.com/CheatSheet.pdf)
+- [Explanation of Cabal and Stack](https://medium.com/@fommil/why-not-both-8adadb71a5ed)
 
 ## Data Types 
 
@@ -93,6 +94,9 @@ c <- liftIO $ config <$> (readTVarIO s)
         -- Note:
 
         addStuff :: Integer -> Integer -> Integer
+        ```
+      ```
+      
       ```
   
   
@@ -114,11 +118,12 @@ c <- liftIO $ config <$> (readTVarIO s)
       - ```
         > f :: a -> a -> a -> a; f = undefined
         > x :: Char; x = undefined
+        ```
       > :t f x
     ```
     
-       ```
-      
+    ```
+  
        ```
   
 - Polymorphism
@@ -142,6 +147,9 @@ c <- liftIO $ config <$> (readTVarIO s)
   
       > Prelude> 6 / fromIntegral (length [1, 2, 3])
       2.0
+      ```
+    ```
+    
     ```
   
 - Type Classes 
@@ -201,10 +209,11 @@ c <- liftIO $ config <$> (readTVarIO s)
       [x | x <- "This Is Africa", elem x ['A'..'Z']]
     ```
     
+  
   -- Can be rewritten as 
-    
+  
     acro xs = [x | x <- xs, elem x ['A'..'Z']]
-    
+  
     ```
     
     ```
