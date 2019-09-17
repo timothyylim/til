@@ -4,6 +4,18 @@
 
 ### Stack
 
+```brew install haskell-stack```
+
+Set up a stack project:
+
+```bash
+stack new my-project
+cd my-project
+stack setup
+stack build
+stack exec my-project-exe
+```
+
 Run the app: 
 
 ```stack exec app```
@@ -31,6 +43,9 @@ c <- liftIO $ config <$> (readTVarIO s)
 
 - [Cheatsheet](http://cheatsheet.codeslower.com/CheatSheet.pdf)
 - [Explanation of Cabal and Stack](https://medium.com/@fommil/why-not-both-8adadb71a5ed)
+- [Stanford lectures](http://www.scs.stanford.edu/11au-cs240h/notes/)
+- [Continuous building](https://blog.ssanj.net/posts/2017-11-30-continuous-compilation-and-testing-through-stack-and-haskell.html)
+- 
 
 ## Data Types 
 
