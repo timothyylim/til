@@ -9,8 +9,8 @@ makeAddress :: Int -> String -> String -> (Int, String, String)
 makeAddress number stree town = (number, street, town)
 
 makeAddressLambda = (\number -> 
-											(\street -> 
-												\town -> (number, street, town)))
+				(\street -> 
+				  \town -> (number, street, town)))
 ```
 
 ### Creating New Types 
