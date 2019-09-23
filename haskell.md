@@ -12,7 +12,7 @@ Set up a stack project:
 stack new my-project
 cd my-project
 stack setup
-stack build
+stack build // or stack build --file-watch
 stack exec my-project-exe
 ```
 
@@ -36,6 +36,13 @@ Using fmap ```<$>``` to read a record from a type with record syntax:
 ``` haskell
 c <- liftIO $ config <$> (readTVarIO s)
 ```
+
+
+
+## Hakyll
+
+Installation:
+https://github.com/jaspervdj/hakyll/issues/684
 
 
 
@@ -233,3 +240,12 @@ c <- liftIO $ config <$> (readTVarIO s)
     
     ```
   - Spines and non-strict evaluation
+
+
+
+
+
+Resources:
+
+https://livebook.manning.com/book/get-programming-with-haskell/chapter-1/
+
