@@ -1,5 +1,32 @@
 # Haskell Examples
 
+
+
+## Reading Values 
+
+```haskell
+data Name = Name { firstName :: String, lastName :: String }
+main = do 
+      let tim = Name "tim" "lim"
+      putStrLn (firstName tim)
+
+```
+
+or with a sum type:
+
+```haskell
+data Name = Name FirstName LastName 
+					| NameMiddle FirstName Middle LastName
+
+main = do 
+      let Name fn _ = Name "tim" "lim"
+      putStrLn fn
+```
+
+[Further reading](https://stackoverflow.com/questions/58077656/access-data-property-haskell#58077750)
+
+
+
 ## Reading a YAML file
 
 ```haskell

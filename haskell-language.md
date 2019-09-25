@@ -150,10 +150,106 @@ names = [Name ("Emil","Cioran")
          , Name ("Friedrich","Nietzsche")]
 ```
 
-```
+```bash
 GHCi> import Data.List
 GHCi> sort names
 [Name ("Emil","Cioran"),Name ("Friedrich","Nietzsche"),
 Name ("Eugene","Thacker")]
 ```
 
+### Creating Types with "and" and "or"
+
+There are two ways to combine types in Haskell, with 'and' to make 'product types' and 'or' to make 'sum types'.
+
+Let's make a book with 'and' using record syntax:
+
+```haskell
+data AuthorName = AuthorName {
+     firstName :: String
+   , lastName :: String
+}
+
+data ArtistName = ArtistName {
+     name :: String
+}
+
+data Book = Book {
+     author  		 :: AuthorName
+   , recordTitle :: String
+   , bookYear    :: Int}
+   
+data VinylRecord = VinylRecord {
+     artist        :: ArtistName
+   , recordTitle   :: String
+   , recordYear    :: Int}
+```
+
+But you can't create a type that combines both Book and Vinyl Record.
+
+With sum types you can:
+
+```haskell
+data Creator = AuthorCreator AuthorName | ArtistCreator ArtistName
+	
+data Book = Book {
+     author  :: Creator
+   , recordTitle :: String
+   , bookYear    :: Int}
+   
+data VinylRecord = VinylRecord {
+     artist        :: Creator
+   , recordTitle   :: String
+   , recordYear    :: Int}
+   
+data StoreItem = BookItem Book | RecordItem VinylRecord
+```
+
+Now we can search using the powerful ```StoreItem```:
+
+````haskell
+madeBy :: StoreItem -> String
+madeBy (BookItem book) = show (author book)
+madeBy (RecordItem record) = show (artist record)
+madeBy _ = "unknown"
+````
+
+[Further reading](https://livebook.manning.com/book/get-programming-with-haskell/chapter-16/1)
+
+
+
+### Semigroups
+
+You can compose functions with ```.```:
+
+```haskell
+myLast :: [a] -> a
+myLast = head . reverse 		
+```
+
+You can compose like types with the semigroup method ```<>```. We can implement Semigroup for Integer like so:	
+
+```haskell
+instance Semigroup Integer where
+	(<>) x y = x + y
+```
+
+### Monoids
+
+
+
+
+
+#### misc.
+
+```
+instance Eq a => Eq (BinTree a) where
+    Leaf a == Leaf b = a == b
+    Branch l r == Branch l' r' = l == l' && r == r'
+    _ == _ = False
+```
+
+The first line of this can be read "if `a` is an instance of `Eq`, then `BinTree a` is also an instance of `Eq`". We then provide the definitions. If we did not include the `Eq a =>` part, the compiler would complain because we're trying to use the `==` function on `a`s in the second line.
+
+The "`Eq a =>`" part of the definition is called the "context."
+
+[src](https://en.wikibooks.org/wiki/Yet_Another_Haskell_Tutorial/Type_advanced#Instances)
