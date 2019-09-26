@@ -235,6 +235,96 @@ instance Semigroup Integer where
 
 ### Monoids
 
+Monoid laws
+
+```haskell
+(x <> y) <> z = x <> (y <> z) -- associativity
+mempty <> x = x               -- left identity
+x <> mempty = x               -- right identity
+```
+
+[Further reading](https://livebook.manning.com/book/get-programming-with-haskell/chapter-17/75)
+
+
+
+### Paramatized types
+
+Types can take parameters. The simplest example is a ```Box```:
+
+
+
+![img](https://dpzbhybb2pdcj.cloudfront.net/kurt/Figures/18fig01.jpg)
+
+
+
+```haskell
+data Box a = Box a deriving Show
+```
+
+```bash
+> n = 6 :: Int
+> :t Box n 
+Box n :: Box Int
+```
+
+We can create a function to put something in a box and then to take it out:
+
+```haskell
+wrap :: a -> Box a
+wrap x = Box x
+
+unwrap :: Box a -> a
+wrap (Box x) = x
+```
+
+
+
+#### Kinds
+
+A kind of a type is just the number parameters it takes. 
+
+```Int``` has a kind of ```*``` but ```Maybe``` has a kind of ```* -> *```.
+
+This is because ```Maybe``` is a function that takes parameters but instead of values, they're types.
+
+[Further reading](https://stackoverflow.com/questions/27095011/what-exactly-is-the-kind-in-haskell)
+
+
+
+### The Maybe type
+
+The ```Maybe``` type allows us to handle systematically remove errors related to ```null``` values.
+
+Definition of ```Maybe```:
+
+```haskell
+data Maybe a = Nothing | Just a
+```
+
+Let's demonstrate how to use ```Maybe```:
+
+```haskell
+import qualified Data.Map as Map
+
+data Organ = Heart | Brain | Kidney | Spleen deriving (Show, Eq)
+
+organs :: [Organ]
+organs = [Heart,Heart,Brain,Spleen,Spleen,Kidney]
+
+ids :: [Int]
+ids = [2,7,13,14,21,24]
+
+organPairs :: [(Int,Organ)]
+organPairs = zip ids organs
+
+organCatalog :: Map.Map Int Organ
+organCatalog = Map.fromList organPairs
+```
+
+
+
+[Further reading](https://livebook.manning.com/book/get-programming-with-haskell/chapter-19/40)
+
 
 
 
