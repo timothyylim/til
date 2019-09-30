@@ -8,7 +8,7 @@ Users:
 - tim
 - wolfie
 
-
+Apps are stored at ```/var/company_name/```
 
 ## Handling routes
 
