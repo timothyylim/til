@@ -327,7 +327,36 @@ organCatalog = Map.fromList organPairs
 
 
 
+## Types in contexts 
 
+
+The ```Functor``` type class solves mismatch between types in a context and a connector:
+
+![img](https://dpzbhybb2pdcj.cloudfront.net/kurt/Figures/p05fig07.jpg)
+
+```Applicative``` solves the mismatch when an argument is in a context but the result isn't:
+
+![img](https://dpzbhybb2pdcj.cloudfront.net/kurt/Figures/p05fig08.jpg)
+
+```Applicative``` also solves the mismatch when the connector itself is trapped in a context:
+
+![img](https://dpzbhybb2pdcj.cloudfront.net/kurt/Figures/p05fig09.jpg)
+
+Finally, the ```Monad``` type class solves the mismatch when the result is in a context but the arugment isn't:	
+
+![img](https://dpzbhybb2pdcj.cloudfront.net/kurt/Figures/p05fig10.jpg)
+
+### Functors
+
+![img](https://dpzbhybb2pdcj.cloudfront.net/kurt/Figures/27fig02.jpg)
+
+
+
+
+
+https://livebook.manning.com/book/get-programming-with-haskell/chapter-27/1
+
+http://learnyouahaskell.com/functors-applicative-functors-and-monoids
 
 #### misc.
 
