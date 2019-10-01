@@ -352,6 +352,40 @@ Finally, the ```Monad``` type class solves the mismatch when the result is in a 
 
 
 
+How one could increment a ```Maybe Int``` :
+
+```haskell
+incMaybe :: Maybe Int -> Maybe Int
+incMaybe (Just n) = Just (n + 1)
+incMaybe Nothing = Nothing		
+```
+
+We can generalise this using a functor:
+
+​	Either by making ```Maybe``` an instance of functor:
+
+```haskell
+instance Functor Maybe where
+  fmap func (Just n) = Just (func n)
+  fmap func Nothing = Nothing
+```
+
+```
+> fmap (+ 1) (Just 1)
+```
+
+​	Or by using the binary operator ```<$>```:
+
+```haskell
+(+ 1) <$> failedRequest
+```
+
+
+
+
+
+
+
 
 
 https://livebook.manning.com/book/get-programming-with-haskell/chapter-27/1
