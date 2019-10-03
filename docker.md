@@ -7,7 +7,7 @@
 ### Commands
 * docker ps //show only running containers
 * docker ps -a //show all containers
-* docker run -it image_name sh //Get inside docker container, use ps to get image name
+* docker run -it image_name sh //Get inside docker container, use ps -a to get image name
 * docker pull image:tag e.g. helloworld:2.5.2 (2.5.2 is the tag, pulls latest by default)
 
 * #### -it flag:
