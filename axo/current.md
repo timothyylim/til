@@ -18,6 +18,34 @@ sikret-refinansiering
 
 
 
+
+
+find . -type f -name '*.jpg' -exec du -ch {} + | sort -r -h
+
+find . -type f \( -iname \*.jpg -o -iname \*.png \) -exec du -ch {} + | sort -r -h
+
+
+
+## Pagespeed revisit
+
+~~grep command for all image sizes~~
+
+~~inline all possibe pictures~~
+
+~~kundo chat~~
+
+~~prefetch vwo~~
+
+~~fjern ev sertifikat~~ 
+
+~~check effect of each of the marketing tags~~
+
+- web page perfomance test
+
+~~lazy load - trust pilot, bank logos~~
+
+
+
 ## Minside
 
 To test 

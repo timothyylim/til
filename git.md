@@ -15,6 +15,12 @@ git add .
 git add .
 ```
 
+### Add everything except one thing
+```
+git add .
+git reset your/file.js
+```
+
 #### Make an additional commit on the most recent one, without making a new commit
 ```
 Make changes you want locally

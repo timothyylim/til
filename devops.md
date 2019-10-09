@@ -25,3 +25,4 @@ Give user sudo access
 ```
 $ usermod -aG sudo username
 ```
+

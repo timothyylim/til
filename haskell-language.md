@@ -380,17 +380,70 @@ instance Functor Maybe where
 (+ 1) <$> failedRequest
 ```
 
+### Applicative 
+
+```Applicative``` solves the mismatch when an argument is in a context but the result isn't:
+
+![img](https://dpzbhybb2pdcj.cloudfront.net/kurt/Figures/p05fig08.jpg)
+
+```Applicative``` also solves the mismatch when the connector itself is trapped in a context:
+
+![img](https://dpzbhybb2pdcj.cloudfront.net/kurt/Figures/p05fig09.jpg)
+
+Annotated type signature for ```<*>```:
+
+![img](https://dpzbhybb2pdcj.cloudfront.net/kurt/Figures/28fig04_alt.jpg)
 
 
 
+Examples of computation within a ```Maybe``` context using applicative ```<*>```:
+
+```bash
+> (++) <$> Just "cats" <*> Just " and dogs"
+Just "cats and dogs"
+
+> (++) <$> Nothing <*> Just " and dogs"
+Nothing
+
+> (++) <$> Just "cats" <*> Nothing
+Nothing
+```
 
 
 
+#### Creating data within a context 
 
+```haskell
+data User = User
+   { name :: String
+   , gamerId :: Int
+   , score :: Int
+   } deriving Show
+   
+serverUsername :: Maybe String
+serverUsername = Just "Sue"
+
+serverGamerId :: Maybe Int
+serverGamerId =  Just 1337
+
+serverScore :: Maybe Int
+serverScore = Just 9001
+```
+
+```bash
+> User <$> serverUsername <*> serverGamerId <*> serverScore
+Just (User {name = "Sue", gamerId = 1337, score = 9001})
+> User <$> Nothing <*> serverGamerId <*> serverScore
+Nothing
+```
 
 https://livebook.manning.com/book/get-programming-with-haskell/chapter-27/1
 
 http://learnyouahaskell.com/functors-applicative-functors-and-monoids
+
+
+
+
 
 #### misc.
 

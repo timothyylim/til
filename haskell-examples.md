@@ -1,15 +1,16 @@
 # Haskell Examples
 
+## Map
 
 
-## Reading Values 
+
+## Printing 
 
 ```haskell
 data Name = Name { firstName :: String, lastName :: String }
 main = do 
       let tim = Name "tim" "lim"
       putStrLn (firstName tim)
-
 ```
 
 or with a sum type:
@@ -25,9 +26,9 @@ main = do
 
 [Further reading](https://stackoverflow.com/questions/58077656/access-data-property-haskell#58077750)
 
+## IO
 
-
-## Reading a YAML file
+###  YAML
 
 ```haskell
 {-# LANGUAGE DeriveGeneric #-}
@@ -49,9 +50,9 @@ main = do
 
 ```
 
+## Misc.
 
-
-## Simple STM Example
+### Simple STM Example
 
 ```haskell
 module Main where
