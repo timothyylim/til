@@ -1,5 +1,11 @@
 # NGINX  
 
+config location mac:
+
+```
+/usr/local/etc/nginx/nginx.conf
+```
+
 config location
 
 ```

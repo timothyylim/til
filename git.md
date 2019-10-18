@@ -78,6 +78,10 @@ git push origin HEAD --force
 ## Submodules
 
 ```
+git submodule update --init --recursive
+```
+
+```
 To remove a submodule you need to:
 
 - Delete the relevant section from the .gitmodules file.

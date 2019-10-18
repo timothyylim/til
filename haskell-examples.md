@@ -2,6 +2,9 @@
 
 ## Map
 
+http://felixmulder.com/writing/2019/10/05/Designing-testable-components.html
+
+http://geekocephale.com/blog/2018/09/28/Haskell-setup
 
 
 ## Printing 

@@ -2,9 +2,9 @@
 
 Lead developer: Timothy Lim
 
-Delivered: 3 October 2019
+Delivered: 14 October 2019
 
-Release name: Cairo
+Release name: Dhaka
 
 
 
@@ -12,25 +12,24 @@ Release name: Cairo
 
 Main additions:
 
-- A/B test for dropdown on the main form
-- New fields for boligkreddit
+- Removes old a/b test images. Speed increase of 40% from 2.7 sek til 1.4 sek
 
+- Desktop counter a/b test
 
-| Issue    | Domain | Description |
+  ​                                  
+
+| Issue    | Link | Description |
 | ---- | ---- | --------------------------------- |
-| 4938 | SE   | Fix sitemap.xml for SE            |
-| 4743 | SE   | Verify number of banks in content |
-| 4950 | NO   | Update ingress + remove popup     |
-| 4836 | NO   | Infobokser og husleie             |
-| 4740 | NO   | Remove test                       |
-| 4941 | NO   | Update bullet points              |
-| 4787 | NO   | Implement test winner             |
-| 4793 | NO   | Dropdown-test: Cookie             |
-| 4704 | NO   | Ny felt boligkredit               |
-| 4747 | NO   | Footer eldre enheter              |
-
-
-
+| 4967 | [4967](https://bugdar.axofinans.no/showreport.php?bugid=4967) | Privatlån content change (SEO purposes)                      |
+| 4637 | [4637](https://bugdar.axofinans.no/showreport.php?bugid=4637) | Counter desktop - nye varianter                              |
+| 4864 | [4864](https://bugdar.axofinans.no/showreport.php?bugid=4864) | Kraft bank på web                                            |
+| 4942 | [4942](https://bugdar.axofinans.no/showreport.php?bugid=4942) | Heading in form / Remove test                                |
+| 4945 | [4945](https://bugdar.axofinans.no/showreport.php?bugid=4945) | Republisere 4 artikler                                       |
+| 4952 | [4952](https://bugdar.axofinans.no/showreport.php?bugid=4952) | Counter allignment and font size for iphone 5                |
+| 4964 | [4964](https://bugdar.axofinans.no/showreport.php?bugid=4964) | Ahrefs fixes                                                 |
+| 4973 | [4973](https://bugdar.axofinans.no/showreport.php?bugid=4973) | Oppdatering av ingress og fjern pop-up på: /refinansiering/refinansiering-av-kredittkort |
+| 4976 | [4976](https://bugdar.axofinans.no/showreport.php?bugid=4976) | [Fjern banklogo test bilder (4951)](https://bugdar.axofinans.no/showreport.php?bugid=4976) |
+| 4975 | [4975](https://bugdar.axofinans.no/showreport.php?bugid=4975) | Oppdatere tall om søknader                                   |
 
 
 
@@ -45,15 +44,12 @@ Main additions:
 
 ## Upcoming Issues
 
-| Issue    | Domain | Description |
+| Issue    | Link | Description |
 | ---- | ---- | ------------------------------- |
-| 4389 | NO   | KBS sjekker/varslinger          |
-| 4637 | NO   | Counter desktop - nye varianter |
-| 4864 | NO   | Kraft bank på web               |
-| 4878 | NO   | Update of main articles         |
-| 4942 | NO   | Heading in form                 |
-| 4637 | NO   | Sikret refinansiering           |
-| N/A  | NO   | Minside                         |
-| 4787 | NO   | AB-test: Forside-tekst          |
-| 4819 | SE   | Implementere blå bakgrunn SE    |
-| 4880 | NO   | Varsel på søknadsskjema         |
+| 4949 | [4949](https://bugdar.axofinans.no/showreport.php?bugid=4949) | [Forsikring i søknadsskjema](https://bugdar.axofinans.no/showreport.php?bugid=4949&hilight=) |
+| 4922 | [4922](https://bugdar.axofinans.no/showreport.php?bugid=4922) | Oppdatere TP på bunn av sider                                |
+| 4946 | [4946](https://bugdar.axofinans.no/showreport.php?bugid=4946) | [Ny bank (Ikano Bank) - oppdatere webben](https://bugdar.axofinans.no/showreport.php?bugid=4946&hilight=) |
+| 4951 | [4951](https://bugdar.axofinans.no/showreport.php?bugid=4951) | [Implementere test av banklogoer](https://bugdar.axofinans.no/showreport.php?bugid=4951&hilight=) |
+| 4974 | [4974](https://bugdar.axofinans.no/showreport.php?bugid=4974) | [Bild till adrecord](https://bugdar.axofinans.no/showreport.php?bugid=4974) |
+| 4977 | [4977](https://bugdar.axofinans.no/showreport.php?bugid=4977) | ["Har du boligkreditt/rammelån" not shown if going directly to application form and error in warning](https://bugdar.axofinans.no/showreport.php?bugid=4977&hilight=) |
+| 4880 | [4880](https://bugdar.axofinans.no/showreport.php?bugid=4880) | Varsel på søknadsskjema                                      |
