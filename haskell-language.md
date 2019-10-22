@@ -447,6 +447,10 @@ http://learnyouahaskell.com/functors-applicative-functors-and-monoids
 
 #### misc.
 
+##### Exception handling
+
+https://stackoverflow.com/questions/6009384/exception-handling-in-haskell
+
 ```
 instance Eq a => Eq (BinTree a) where
     Leaf a == Leaf b = a == b
