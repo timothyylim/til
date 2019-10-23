@@ -11,4 +11,5 @@ In explore mode:
 Resources:
 
 - https://shapeshed.com/vim-netrw/
-- 
+
+  

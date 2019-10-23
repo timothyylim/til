@@ -1,5 +1,22 @@
 # Haskell Examples
 
+## Maybe
+
+Handle a maybe 
+
+```haskell
+justConfig <- decodeFile "config.yaml" :: IO (Maybe Config)
+config <- (maybe (Map.fromList [("hi", "by1")]) file)
+```
+
+## Record Syntax
+
+Using fmap ```<$>``` to read a record from a type with record syntax:
+
+``` haskell
+c <- liftIO $ config <$> (readTVarIO s)
+```
+
 ## Map
 
 http://felixmulder.com/writing/2019/10/05/Designing-testable-components.html
@@ -53,9 +70,9 @@ main = do
 
 ```
 
-## Misc.
+## STM 
 
-### Simple STM Example
+### STM Bank Example
 
 ```haskell
 module Main where
