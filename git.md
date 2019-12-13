@@ -42,7 +42,10 @@ git push --force origin my_branch
 
 #### Delete a branch 
 
-```git branch -d the_local_branch```
+```
+git branch -d the_local_branch
+git push -d origin the_remote_branch
+```
 
 ### Rename a branch
 ```
