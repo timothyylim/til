@@ -68,6 +68,17 @@ git reset --hard <sha1-commit-id> //revert to a given commit
 ```
 git push origin HEAD --force
 ```
+#### Set up multiple users:
+```
+git config user.name "Timothy Lim"
+git config user.email "timothylim23@gmail.com"
+```
+* Can confirm by checking vi .git/config
+```
+[user]
+        name = Timothy Lim
+        email = timothylim23@gmail.com
+```
 
 #### Setting up Multiple Git Configs
 
@@ -77,6 +88,7 @@ git push origin HEAD --force
   * Go to the repo
   * vi .git/config
   * Switch url from git@github.com:Waleed-Chaudhry/jQuery.git to git@github.com-Waleed-Chaudhry:Waleed-Chaudhry/jQuery.git
+  * Or https://github.com/timothyylim/axo-minside-private to https://github.com-timothyylim/timothyylim/axo-minside-private
 
 ### Migrate a repo from bitbucket to git
 ```
