@@ -78,6 +78,17 @@ git push origin HEAD --force
   * vi .git/config
   * Switch url from git@github.com:Waleed-Chaudhry/jQuery.git to git@github.com-Waleed-Chaudhry:Waleed-Chaudhry/jQuery.git
 
+### Migrate a repo from bitbucket to git
+```
+Waleeds-MacBook-Pro:~ Waleed$ cd Code/
+Waleeds-MacBook-Pro:Code Waleed$ git clone --mirror https://timothyylim@bitbucket.org/axofinans/axofinans-no-nyweb.git
+Waleeds-MacBook-Pro:Code Waleed$ cd axofinans-no-nyweb/
+Waleeds-MacBook-Pro:axofinans-no-nyweb Waleed$ git remote set-url --push origin https://github.com/timothyylim/axo-minside-private.git
+Make sure you have given collab permissions to the user you're about to push before doing the next step
+git push --mirror
+Delete the repo you had, and git clone the new one
+```
+
 ## Submodules
 
 ```
