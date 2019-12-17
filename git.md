@@ -1,5 +1,11 @@
 # git 
 
+#### Pull from upstream 
+
+```
+git pull upstream master
+```
+
 #### Add all modified files
 ```
 git add -u
