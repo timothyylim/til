@@ -68,6 +68,14 @@ git reset --hard <sha1-commit-id> //revert to a given commit
 ```
 git push origin HEAD --force
 ```
+
+### Remove a commit inside the git log
+```
+git log --oneline // to view the commit id
+git rebase --onto 436923f^ 436923f HEAD
+git push origin HEAD:minside-dev --force
+```
+
 #### Set up multiple users:
 ```
 git config user.name "Timothy Lim"
