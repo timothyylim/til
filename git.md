@@ -44,7 +44,7 @@ git push --force origin my_branch
 ```
 
 #### Delete all local branches except master
-```git branch | grep -v "master" | xargs git branch -D ```
+```git branch | grep -v "minside-dev" | xargs git branch -D ```
 
 #### Delete a branch 
 
