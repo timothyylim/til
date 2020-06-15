@@ -133,3 +133,13 @@ To remove a submodule you need to:
 - Delete the now untracked submodule files rm -rf path_to_submodule
 ```
 
+### Merge changes from one branch to another 
+```
+git checkout release
+git pull
+git checkout coAppValidations
+git merge release
+git add .
+// Go to VScode, and accept all incoming changes
+git commit, and git push
+```
