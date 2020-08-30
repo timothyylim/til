@@ -35,6 +35,12 @@ git commit --amend --no-edit
 git push origin -f 4704-feature
 ```
 
+#### Merge changes from release branch
+* Go to Source Control tab in VScode
+* From the ... in the panel, select Branch -> Merge from, and select Remote
+* Right click build and select accept all incoming
+* git add . to add all the changes, and make sure everything shows up in staging on the VScode tab
+
 #### Squash all commits into one commit
 ```
 git checkout my_branch
