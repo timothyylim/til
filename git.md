@@ -35,11 +35,18 @@ git commit --amend --no-edit
 git push origin -f 4704-feature
 ```
 
-#### Merge changes from release branch
-* Go to Source Control tab in VScode
-* From the ... in the panel, select Branch -> Merge from, and select Remote
-* Right click build and select accept all incoming
-* git add . to add all the changes, and make sure everything shows up in staging on the VScode tab
+### Merge changes from one branch to another 
+```
+git checkout release
+git pull
+git checkout coAppValidations
+git merge release
+git add .
+// Go to VScode, and accept all incoming changes for build.js
+// Go to other conflicted files, and copy the differences to an online diff tool
+// Manually decide what changes you want to keep
+git commit, and git push
+```
 
 #### Squash all commits into one commit
 ```
@@ -137,15 +144,4 @@ To remove a submodule you need to:
 - Run rm -rf .git/modules/path_to_submodule (no trailing slash).
 - Commit git commit -m "Removed submodule <name>"
 - Delete the now untracked submodule files rm -rf path_to_submodule
-```
-
-### Merge changes from one branch to another 
-```
-git checkout release
-git pull
-git checkout coAppValidations
-git merge release
-git add .
-// Go to VScode, and accept all incoming changes
-git commit, and git push
 ```
