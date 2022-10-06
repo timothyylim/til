@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "f0d34abe33627e7d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8da0381790f07627",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "README.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8ac91f0bd7d6d4a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a8303adfd3bf07e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "364fddaea65d6588",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "9cc19d0b3bbc8a5c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3edb31de164c3cb6",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2cc0d750f07f16b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "47a5244ea83c0ad5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb7b33a3698ca71e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ee48bdfd67d22c9d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3fc05da0a7cb1eb0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8fb0224c2c9b3bd8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8da0381790f07627",
+  "lastOpenFiles": [
+    "todo.md",
+    "server/devops.md",
+    "misc. frontend/frontend.md",
+    "nodejs/node.md",
+    "server/nginx.md",
+    "general/git.md",
+    "server/docker.md",
+    "server/command-line.md",
+    "server/bash.md",
+    "automation.md"
+  ]
+}
